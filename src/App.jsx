@@ -4,7 +4,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
 import Home from './pages/Home.jsx'
-import CoinFlip from './pages/CoinFlip.jsx'
+import CoinflipGame from './pages/CoinFlipGame.jsx'
 import CupGame from './pages/CupGame.jsx'
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/coinflip" element={<CoinFlip />} />
+        <Route path="/coinflip" element={<CoinflipGame />} />
         <Route path="/cupgame" element={<CupGame />} />
       </Routes>
     </Router>
