@@ -1,0 +1,14 @@
+.snake-wrapper {
+  text-align: center;
+  font-family: monospace;
+}
+
+
+.snake-score {
+  font-size: 50px;
+}
+
+.snake-title {
+  font-size: 40px;
+  font-family: 'Limelight', cursive;
+}
