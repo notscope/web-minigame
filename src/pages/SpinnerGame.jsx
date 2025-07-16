@@ -86,7 +86,7 @@ function SpinnerGame() {
                   <Link to="/" className="text-blue-500 hover:underline"><FontAwesomeIcon icon={faArrowLeft} /> Back to Home</Link>
               </div>
               <div className="main p-8 text-center">
-                  <h2 className="text-2xl font-bold mb-4">Customizable Spin Wheel</h2>
+                  <h2 className="text-2xl font-bold mb-4">Spin Wheel</h2>
 
                   {/* Input and Add Button */}
                   <div className="mb-4 flex justify-center gap-2">
@@ -151,9 +151,20 @@ function SpinnerGame() {
 
                   {/* Winner Text */}
                   {selected && (
-                      <div className="mt-6 text-xl font-bold text-green-700">
-                      Winner: {selected}
+                    <div className="fixed inset-0 flex items-center justify-center z-50" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+                      <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full text-center">
+                        <div className="text-xl font-bold text-green-700">
+                          Winner: {selected}
+                        </div>
+                        <button
+                          className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                          onClick={() => setSelected(null)}
+                          aria-label="Close"
+                        >
+                          Close
+                        </button>
                       </div>
+                    </div>
                   )}
                   </div>
               </div>
