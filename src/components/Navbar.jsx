@@ -9,7 +9,7 @@ function Navbar() {
           {/* Logo */}
           <div className="flex items-center">
             <a href="/" className="text-xl font-bold text-blue-600 dark:text-blue-400">
-              MyApp
+              WebDemo
             </a>
           </div>
 
